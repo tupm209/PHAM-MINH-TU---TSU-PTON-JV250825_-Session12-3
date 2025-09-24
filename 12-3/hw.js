@@ -2,7 +2,7 @@ let count = 1;
 let i = 0;
 while (count <= 20) {
   i++;
-  if (i < 2) {
+  if (i < 2　|| i%Math.sqrt(i) === 0) {
     continue;
   } else if (i === 2 || i === 3 || i === 5 || i === 7) {
     console.log(`Số nguyên tố thứ ${count} là ${i}`);
@@ -14,3 +14,4 @@ while (count <= 20) {
     count++;
   }
 }
+
